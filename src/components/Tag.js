@@ -19,9 +19,9 @@ export default function Tag() {
     }
 
     return (
-        <div className='w-1/3 mt-10 rounded-lg bg-pink-200 mx-auto border shadow-pink-500 hover:shadow-pink-700 hover:shadow-xl transition-all duration-500 shadow-lg flex justify-center items-center flex-col mb-10'>
+        <div className='w-1/2 mt-10 rounded-lg bg-pink-200 mx-auto border shadow-pink-500 hover:shadow-pink-700 hover:shadow-xl transition-all duration-500 shadow-lg flex justify-center items-center flex-col mb-10'>
             <h1 className='text-3xl mt-2 text-center font-bold underline'>A Random {search} Gif</h1>
-            {loading ? <Spinner /> : <img src={gif} alt="" width={450} />}
+            {loading ? <Spinner /> : <img src={gif} alt="" width={450} className='p-2' />}
 
             <input
                 type="text"
